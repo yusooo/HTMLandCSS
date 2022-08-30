@@ -110,3 +110,33 @@
     멀티미디어 파일 삽입 (오디오 및 비디오 등)
     <object width="너비" height="높이" data="파일"></object> <!--오디오, 비디오, PDF 등 삽입-->
     <embed src="파일 경로" width="너비" height="높이"> <!--오디오, 비디오, 이미지 등 삽입 / 닫기 태그 X-->
+
+    플러그인 필요 없이 브라우저에서 바로 재생하는 태그 (html5~)
+        <audio src="오디오 파일 경로"></audio>
+        <video src="비디오 파일 경로"></video>
+        <!--속성-->
+        <!--constrols= : 컨트롤 바 표시, autoplay= : 자동 재생, loop= : 반복 재생, muted= : 음소거, preload= : 로딩방법 (사용값 : auto(Default), metadata, none)-->
+        <!--width= , height= : 비디오 플레이어의 너비, 높이 지정, poster="파일 이름" : 비디오 플레이어의 재생 전 포스터-->
+        <!--크롬 브라우저에서 비디오 자동 재생 시 muted를 넣어야 한다 ( muted autoplay loop )-->
+
+    하이퍼링크 삽입
+        <a href="링크할 주소">텍스트 or 이미지</a>
+        href= : 링크 주소, target="_blank" : 새탭에서 열기
+            텍스트 링크 예시 <p><a href="~">표시 텍스트</a></p>
+            이미지 링크 예시 <a><img src="이미지 파일 경로" alt></a>
+
+    폼 입력
+        <form [속성 = "속성값"]>여러 폼 요소</form>
+            method=get : 사용자 입력 내용이 드러나게 서버로 넘겨줌
+            method=post : 사용자 입력 내용이 드러나지 않게 서버로 넘겨줌
+            name = : 자바스크립트로 폼 이름 지정
+            action= : 서버 프로그램 지정
+            target= : 열어볼 파일 위치 지정
+            autocomplete= : 자동 완성 기능 지정 (Default : on)
+            <fieldset></fieldset> : 폼 내부에서 구역을 나눔
+                <legend></legend> : 구역 제목 붙이기
+
+    레이블 붙이기
+        <label> 레이블명<input></label>
+        <label for="id명">레이블명<input id="id명"></label>
+ 
