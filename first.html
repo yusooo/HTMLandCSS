@@ -1,5 +1,5 @@
-<p>HTML = Hypertext Markeup Language<p>
-<p> this is not programming language, but It's a Markeup language.<p>
+<p>HTML = Hypertext Markeup Language</p>
+<p> this is not programming language, but It's a Markeup language.</p>
 
 
 <title>base tag</title>
@@ -138,5 +138,78 @@
 
     레이블 붙이기
         <label> 레이블명<input></label>
-        <label for="id명">레이블명<input id="id명"></label>
- 
+        <label for="id명">레이블명<input id="id명"></label> <!--for속성과 폼 요소의 id 연결시키기-->
+
+        input의 type 속성값들
+        type=
+            text : 한 줄 텍스트
+            password : 비밀번호
+                text, password와 같이 쓰이는 속성들
+                size= 화면에 출력할 글자 수
+                value= text필드에 보여줄 내용 (pw 사용 X)
+                maxlength= 최대 입력 가능한 글자 수
+            search : 검색
+            url : url
+            email : 이메일 주소
+            tel : 전화번호
+            checkbox : 체크박스 (중복체크)
+            radio : 라디오 버튼 (unique 체크)
+                checkbox, radio와 같이 쓰이는 속성들
+                value= 서버에 전달될 값
+                checked= 기본으로 선택하고 싶은 항목
+                name= radio 전용, 여러 옵션의 공통 이름
+            number : 숫자 스핀 박스 (버튼으로 숫자 조절)
+            range : 숫자 슬라이드 막대
+                number, range와 같이 쓰이는 속성들
+                min= 최소값 (기본값 0)
+                max= 최대값 (기본값 100)
+                step= 조정할 단위값 (기본값 1)
+                value= 초기값
+            date : local - 연, 월, 일
+            month : local - 연, 월
+            week : local - 연, 주
+            time : local - 시, 분, 초, 분할 초
+            datetime : UTC - 연, 월, 일, 시, 분, 초, 분할 초
+            datetime-local : local - 연, 월, 일, 시, 분, 초, 분할 초
+            submit : 전송 버튼
+            reset : 리셋 버튼
+                submit, reset과 같이 쓰이는 속성들
+                value= 버튼에 표시할 내용
+            image : submit 버튼 이미지
+                image와 같이 쓰이는 속성들
+                src= 이미지 경로
+                alt= 대체 텍스트
+            button : 일반 버튼
+                button과 같이 쓰이는 속성들
+                value= 버튼에 표시할 내용
+                onclick= 클릭 시 실행할  JS 함수
+            file : 파일 첨부 버튼
+            hidden : 사용자에게 보이지 않는 값 필드
+        autofocus=
+            페이지를 불러오자마자 마우스 포인터가 표시
+        placeholder=
+            힌트를 표시, 내용을 입력하면 사라짐
+        readonly=
+            읽기전용
+        required=
+            필수 입력 필드드
+    
+    <textarea></textarea> 여러 줄의 텍스트 입력 영역역
+        rows= 세로 줄 수, 길 경우 스크롤 막대 생성
+        cols= 가로 너비 (문자 단위)
+
+    <select></select> 드롭다운 목록 생성
+        size= 항목 개수
+        multiple= 둘 이상의 항목을 선택
+        <option></option> 옵션
+            value= 서버에 전달될 값
+            selected= 기본 선택 항목
+
+    <datalist></datalist> 미리 입력된 데이터 목록
+        <option></option> 옵션
+            value= 서버에 전달될 값
+    
+    <button></button> 버튼
+        type="submit" 폼을 서버로 전송
+        type="reset" 폼 초기화
+        type="button" 일반 버튼, <input type="button">과 같음
