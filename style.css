@@ -1,3 +1,19 @@
 .style{
     font: 100;;
 }
+
+// CSS = Cascading Style Sheets
+
+// CSS는 실제 프로그래밍 언어 혹은 마크업 언어가 아니다
+
+
+
+// html에 css 적용하기
+// <link href="styles/style.css" rel="stylesheet" type="text/css">
+// 전체 구조 : rule set (줄여서 rule)
+//  선택자 selector : rule의 맨 앞에 있는 HTML 요소 이름 (꾸밀 요소를 선택)
+//  선언 : 단일 규칙, 꾸미길 원하는 요소의 속성 명시시
+//  속성 값 : 속성의 오른 쪽, 혹은 콜론 뒤에 가능한 많은 결과 중 하나를 선택택
+//  각각의 rule은 반드시 {}로 감싸져야 함
+//  각각의 선언 안에 각 속성을 해당 값과 구분하기 위해 콜론 : 사용
+//  각각의 rule 안에 각 선언을 그 다음 선언으로부터 구분하기 위해 세미콜론 ; 사용
